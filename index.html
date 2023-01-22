@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,10 +10,34 @@
   <body>
     <form class="search_bar" action="/" method="post">
       <select name="지역" id="">
-        <option value="서울">서울</option>
-        <option value=""></option>
+        <option value="서울" name="seoul">서울</option>
+        <option value="인천" name="inchon">인천</option>
       </select>
+      <input type="text" placeholder="지역명을 입력해 주세요!" />
+      <button class="search_btn" aria-label="입력된 지역명을 검색합니다.">
+        검색하기
+      </button>
     </form>
-    <main id="data"></main>
+    <div class="weather_data_container">
+      <section class="weather_basic_data">
+        <ul class="weather_day_box">
+          <li class="weather_day">
+            <div class="dayInfo_section">
+              <span class="day_data"></span>
+              <span class="date_data"></span>
+            </div>
+            <div class="morning_section"></div>
+            <div class="afternoon_section"></div>
+          </li>
+          <li class="weather_day">test</li>
+          <li class="weather_day">test</li>
+          <li class="weather_day">test</li>
+          <li class="weather_day">test</li>
+          <li class="weather_day">test</li>
+        </ul>
+      </section>
+      <section class="detail-data"></section>
+    </div>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

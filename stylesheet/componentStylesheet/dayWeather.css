@@ -1,0 +1,19 @@
+.weather_basic_data {
+  display: inline-block;
+}
+.weather_basic_data .weather_day_box {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 10px;
+}
+.weather_basic_data .weather_day_box .weahter_day {
+  display: flex;
+  flex-direction: column;
+  background-color: beige;
+  width: 200px;
+  height: 280px;
+  margin: 2px;
+}
+
+/*# sourceMappingURL=dayWeather.css.map */

@@ -2,3 +2,5 @@
 
 @import url("./init/normalize.css");
 @import url("./init/base.css");
+
+@import url("./componentStylesheet/dayWeather.css");
