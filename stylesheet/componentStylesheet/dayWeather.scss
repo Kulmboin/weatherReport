@@ -1,18 +1,29 @@
+// 날씨를 보여주는 카드의 전첵 스타일링 정의
+
+:root {
+  --weather-card-width: 250px;
+  --weather-card-height: 250px;
+}
+
 .weather_basic_data {
   display: inline-block;
 
   .weather_day_box {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
     list-style: none;
     gap: 10px;
+    width: 80%;
+    height: 280px;
 
-    .weahter_day {
+    .weather_card {
       display: flex;
       flex-direction: column;
-      background-color: beige;
-      width: 200px;
-      height: 280px;
+      background-color: var(--color-blue-400);
+      width: var(--weather-card-width);
+      height: var(--weather-card-height);
       margin: 2px;
     }
   }
